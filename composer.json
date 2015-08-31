@@ -1,0 +1,26 @@
+{
+    "name": "acme/brilliant-wordpress-site",
+    "description": "My brilliant WordPress site",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+    ],
+    "require": {        
+        "wpackagist-plugin/akismet":"dev-trunk",        
+        "wpackagist-plugin/captcha": "dev-trunk",
+        "wpackagist-plugin/facebook-comments-plugin": "dev-trunk",
+        "wpackagist-plugin/wordpress-seo": "dev-trunk",
+        "wpackagist-plugin/wp-pagenavi": "dev-trunk",
+        "wpackagist-plugin/wordpress-23-related-posts-plugin": "dev-trunk",
+        "wpackagist-plugin/wp-maintenance-mode": "dev-trunk",
+        "wpackagist-plugin/wptouch": "dev-trunk",
+        "wpackagist-theme/hueman":"*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    }
+}

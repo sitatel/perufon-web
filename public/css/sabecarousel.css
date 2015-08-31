@@ -1,0 +1,9 @@
+/* Sabe Carousel */
+#sitaSlider { height: 105px;width:940px; margin: auto; overflow:hidden; position: relative; padding: 0 50px 10px;   }
+#sitaSlider .viewport { height: 125px; overflow: hidden; position: relative; }
+#sitaSlider .buttons {background: #181823;border-radius: 35px;display: block;position: absolute;top: 35%;left: 0;width: 35px;height: 35px;color: #fff;font-weight: bold;text-align: center;line-height: 35px;text-decoration: none;font-size: 22px;}
+#sitaSlider .next{right: 0;left: auto;top: 35%;}
+#sitaSlider .buttons:hover{color: #ffffff;background: transparent;}
+#sitaSlider .disable { visibility: hidden; }
+#sitaSlider .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 240px; left: 0 top: 0; }
+#sitaSlider .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; width: 236px;}

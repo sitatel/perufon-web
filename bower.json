@@ -1,0 +1,23 @@
+{
+  "name": "perufon_web",
+  "version": "0.2.3",
+  "homepage": "https://github.com/sitatel/perufon-web",
+  "authors": [
+    "Julio Laveriano en SITATEL <julioantonio.lp@gmail.com>"
+  ],
+  "description": "Web Perufon en WP",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+  "devDependencies": {
+    "jQuery": "1.11.3"
+  }
+}
