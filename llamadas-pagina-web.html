@@ -47,29 +47,18 @@
 							Rellene el Formulario <br><span class="os-bold">¡Prueba Sin Costo!</span>
 						</div>
 						<div id="v2c_api_contact">
-							<div id="v2c_form_contact">
-								<div id="v2c_apiform">
-									<form method="post" action="https://service.v2contact.com/rest/form/post.jsp">
-										<div>
-										<label for="nombre" style="visibility: hidden;">Nombre</label>
-										<input type="text" name="nombre" id="nombre" required="" placeholder="Nombre">
-										</div>
-										<div>
-										<label for="email" style="visibility: hidden;">Correo</label>
-										<input type="email" name="email" id="email" required="" placeholder="E-Mail">
-										</div>
-										<div>
-										<label for="celular" style="visibility: hidden;">Celular</label>
-										<input type="text" name="celular" id="celular" required="" placeholder="Celular">
-										</div>
-										<div>
-										<input type="submit" name="btnSend" value="¡Solicitar Ahora!" class="v2c_btn_submit btn-red_landing">
-										</div>
-									</form>
-									<div id="v2c_apiform"></div>
-								</div>
-							</div>
+							<div id="v2c_form_contact"></div>
 						</div>
+						<script type="text/javascript">
+						var api_key = '0eec27c419d0fe24e53c90338cdc8bc6',
+						v2c_api = document.getElementById('v2c_api_contact');
+						(function() {
+						var v2c = document.createElement('script');
+						v2c.type = 'text/javascript';
+						v2c.async = true;
+						v2c.src = 'https://service.v2contact.com/rest/form/api_contacto.js.php?v2c_key='+api_key;
+						v2c_api.appendChild( v2c );})();
+						</script>
 						
 					</div>
 				</div>
@@ -126,5 +115,15 @@
 <script type="text/javascript" src="http://www.perufon.com/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/public/js/jquery.sabecarousel.js"></script>
+<script>
+	window.onload = function(){
+
+		$('#nombre').attr('placeholder', 'Nombre');
+		$('#apellido').attr('placeholder', 'Apellido');
+		$('#email').attr('placeholder', 'Email');
+		$('#celular').attr('placeholder', 'Celular');
+
+	}
+</script>
 </body>
 </html>

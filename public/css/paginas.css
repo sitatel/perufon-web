@@ -77,7 +77,7 @@
 	.form_landing{
 		width: 100% !important
 	}
-	.btn-red_landing{
+	.btn-red_landing, .v2c_btn_submit{
 		font-size: 20px !important;
 		padding: 14px 10px !important;
 	}
@@ -240,7 +240,7 @@ p.lead{
 .logo .title{
 	font: 4.5em 'Open Sans Bold';
 }
-.btn-red_landing, .btn-red_landing-lg{
+.btn-red_landing, .btn-red_landing-lg, .v2c_btn_submit{
 	background: url('../images/btn-red.jpg') darkorange;
 	border: 0 !important;
 	font: 24px 'Open Sans Regular';
