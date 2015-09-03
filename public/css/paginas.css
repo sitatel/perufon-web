@@ -65,15 +65,90 @@
 		display: block;
 		margin:auto;
 	}
+	.row-double{
+		display: block !important;
+	}
+	.row-double div:nth-child(1)>img{
+		width: 90% !important;
+	}
+	h3.hablan{
+		font-size: 26px !important
+	}
+	.form_landing{
+		width: 100% !important
+	}
+	.btn-red_landing{
+		font-size: 20px !important;
+		padding: 14px 10px !important;
+	}
+	.btn-red_landing-lg{
+		font-size: 14px !important;
+		padding: 14px 10px !important;
+	}
+	.boock_left h1{
+		font-size: 26px !important
+	}
+	.boock_left h2{
+		font-size: 18px !important;
+		width: 100% !important;
+	}
+	.des_title{
+		font-size: 12px !important;
+		padding: 2px!important;
+	}
+	.des_title_pw{
+		font-size: 24px !important
+	}
+	.logo .title{
+		font-size: 3em !important;
+	}
+	.cover{
+		padding: 0px !important
+	}
+	.inner.cover{
+		padding: 0px !important
+	}
+	.cover-heading span{
+		font-size: 16px !important
+	}
+	.ul_call{
+		width: 100% !important;
+	}
+	.ul_boock li, .ul_call li{
+		margin-left: 0px !important;
+		font-size: 1em !important;
+	}
+	.blqCentrado{
+		width: 100% !important
+	}
+	.blqCentrado img{
+		width: 100% !important
+	}
+	.left_uls{
+		margin-top: 0px !important;
+		padding-top: 35px !important;
+	}
+	.form_pw{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		padding: 65px 0px !important;
+	}
+	.call_top{
+		padding-top: 36px !important
+	}
 }
 @media(min-width: 601px){
 	.logo{
 		text-align: left;
 		padding-top: 20px;
-	}
+	}	
 }
 /*******************************************/
 body{
+	/*background: url('http://www.perufon.com/public/images/bg-confirmacion.jpg');
+	background-size: cover;*/
+}
+.contenedor{
 	background: url('http://www.perufon.com/public/images/bg-confirmacion.jpg');
 	background-size: cover;
 }
@@ -121,9 +196,113 @@ p.lead{
 	width: 50px;
 }
 .masthead{
-	position: relative !important;
+	position: relative !important
 }
 .logo{
 	text-align: left;
 	padding-top: 20px;
 }
+
+.ebook{
+	z-index: 998
+}
+.ebook img{
+	padding-top: 35px;
+	position: relative;
+	z-index: 1000;
+}
+.ul_boock, .ul_call{
+	margin-top: 30px;
+}
+.ul_boock li{
+	font: 1.2em 'Open Sans Regular';
+	list-style-image: url('../images/li.png');
+	list-style-type: none;
+	margin: 15px 5px 15px 35px;
+	text-align: left;
+}
+.ul_call li{
+	font: 1.2em 'Open Sans Regular';
+	list-style-image: url('../images/check.png');
+	list-style-type: none;
+	margin: 15px 5px 15px 35px;
+	text-align: left;
+}
+.ul_call li>span{
+	display: inline-block;
+}
+.boock_left{
+	padding: 25px;
+}
+.cover-heading span{
+	font-size: 25px;
+}
+.logo .title{
+	font: 4.5em 'Open Sans Bold';
+}
+.btn-red_landing, .btn-red_landing-lg{
+	background: url('../images/btn-red.jpg') darkorange;
+	border: 0 !important;
+	font: 24px 'Open Sans Regular';
+	padding: 18px 45px;
+	width: 90%;
+}
+.form_landing{
+	background: #2e2e2e;
+	margin: auto;
+	padding: 15px;
+	width: 70%;
+}
+.form_landing input[type=text], .form_landing input[type=email], .form_landing select {
+	background: #fff!important;
+	border: 0;
+	color: #000!important;
+	font: 16px 'Open Sans Bold';
+	margin: auto;
+	padding: 15px 10px;
+	text-align: center;
+	width: 90%;
+}
+.form_landing form>div{
+	margin: 10px 0px;
+}
+.form_landing form>div>label{
+	display: none !important;
+}
+.boock_left h1{
+	font: 32px 'Open Sans Bold';
+}
+.boock_left h2{
+	font: 22px 'Open Sans Regular';
+	margin:auto;
+	width:80%;
+}
+.des_title, .des_title_pw{
+	font: 16px 'Open Sans Regular';
+	padding: 4px 15px;
+}
+.row-double{
+	display: flex;
+}
+.row-double .col-md-6{
+	flex: 1;
+}
+h3.hablan{
+	color:#fff;
+	font: 38px 'Open Sans Bold';
+}
+.blqCentrado{
+	height: 500px;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -386px;
+	position: absolute;
+	right: 0;
+	width: 500px;
+}
+
+
+
+
+
