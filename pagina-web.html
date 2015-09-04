@@ -13,6 +13,7 @@
 	<link href="http://www.perufon.com/public/css/cover.css" rel="stylesheet">
 	<link rel="stylesheet" href="http://www.perufon.com/public/css/sabecarousel.css" type="text/css" media="screen"/>
 	<link href="http://www.perufon.com/public/css/paginas.css" rel="stylesheet">
+	<link href="http://www.perufon.com/public/css/JALP.css" rel="stylesheet">
 </head>
 <body>
 <div class="container" style="width:100%">
@@ -33,7 +34,7 @@
 							<li>Podrá Crear Mensajes de voz para sus clientes ¡Aumente Imágen y confianza!.</li>
 						</ul>
 						<div style="margin-top: 80px; text-align: center;">
-							<a class="btn-rojo btn-red_landing-lg" title="¡Solicite Una Prueba Gratis!" href="#">
+							<a class="btn-rojo btn-red_landing-lg" title="¡Solicite Una Prueba Gratis!" href="#perufon">
 								¡Solicite Una Prueba Gratis!
 							</a>
 						</div>
@@ -93,7 +94,33 @@
 		</div>
 	</div>
 </article>
-
+<div id="video_principal" class="main" role="main">  
+	<section class="semantic-content" id="perufon" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
+		<div class="modal-inner">
+			<div class="form_landing form_pw" style="margin-top: 50px;width: 40%;margin-bottom: 100px;">
+				<div class="form_mobile">
+					<div class="des_title_pw" style="font-size:25px">
+						Rellene el Formulario <br><span class="os-bold">¡Prueba Sin Costo!</span>
+					</div>
+					<div id="v2c_api_contact">
+						<div id="v2c_form_contact"></div>
+					</div>
+					<script type="text/javascript">
+					var api_key = '0eec27c419d0fe24e53c90338cdc8bc6',
+					v2c_api = document.getElementById('v2c_api_contact');
+					(function() {
+					var v2c = document.createElement('script');
+					v2c.type = 'text/javascript';
+					v2c.async = true;
+					v2c.src = 'https://service.v2contact.com/rest/form/api_contacto.js.php?v2c_key='+api_key;
+					v2c_api.appendChild( v2c );})();
+					</script>
+				</div>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Cerrar" data-close="Cerrar"></a>
+	</section>
+</div>
 <script type="text/javascript" src="http://www.perufon.com/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/public/js/jquery.sabecarousel.js"></script>
