@@ -13,6 +13,30 @@
 	<link href="http://www.perufon.com/public/css/cover.css" rel="stylesheet">
 	<link rel="stylesheet" href="http://www.perufon.com/public/css/sabecarousel.css" type="text/css" media="screen"/>
 	<link href="http://www.perufon.com/public/css/paginas.css" rel="stylesheet">
+	<link href="http://www.perufon.com/public/css/JALP.css" rel="stylesheet">
+<style>
+	.form_mobile{
+		text-align: center !important
+	}
+	.form_landing{
+		margin-bottom: auto !important;
+		margin-top: auto !important;
+		width: 100% !important;
+	}
+	.des_title_pw{
+		color: white !important;
+	}
+	@media(max-width: 600px){
+		.prueba1{
+			display: none !important;
+		}
+	}
+	@media(min-width: 601px){
+		.prueba2{
+			display: none !important;
+		}
+	}
+</style>
 </head>
 <body>
 <div class="container" style="width:100%">
@@ -33,7 +57,10 @@
 							<li>Obtenga indicadores de desempeño para su Personal de Ventas ¡Incremente Resultados!.</li>
 						</ul>
 						<div style="margin-top: 80px; text-align: center;">
-							<a class="btn-rojo btn-red_landing-lg" title="¡Solicite Una Prueba Gratis!" href="#">
+							<a class="btn-rojo btn-red_landing-lg prueba1" title="¡Solicite Una Prueba Gratis!" href="#perufon">
+								¡Solicite Una Prueba Gratis!
+							</a>
+							<a class="btn-rojo btn-red_landing-lg prueba2" title="¡Solicite Una Prueba Gratis!" href="#mobil_form">
 								¡Solicite Una Prueba Gratis!
 							</a>
 						</div>
@@ -83,6 +110,15 @@
 	    <a class="buttons next" href="#">></a>
 	</div>
 </article>
+<div class="container" style="width:100%">
+	<article>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<div id="mobil_form"></div>
+			</div>
+		</div>
+	</article>
+</div>
 <article>
 	<div class="row footer-links" style="margin:auto">
 		<div class="col-md-9"></div>
@@ -93,9 +129,52 @@
 		</div>
 	</div>
 </article>
-
+<div id="video_principal" class="main" role="main">  
+	<section class="semantic-content" id="perufon" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
+		<div class="modal-inner">
+			<div class="form_landing form_pw" style="margin-top: 50px;width: 40%;margin-bottom: 100px;">
+				<div class="form_mobile">
+					<div class="des_title_pw" style="font-size:25px">
+						Rellene el Formulario <br><span class="os-bold">¡Prueba Sin Costo!</span>
+					</div>
+					<div id="v2c_api_contact">
+						<div id="v2c_form_contact"></div>
+					</div>
+					<script type="text/javascript">
+					var api_key = '0eec27c419d0fe24e53c90338cdc8bc6',
+					v2c_api = document.getElementById('v2c_api_contact');
+					(function() {
+					var v2c = document.createElement('script');
+					v2c.type = 'text/javascript';
+					v2c.async = true;
+					v2c.src = 'https://service.v2contact.com/rest/form/api_contacto.js.php?v2c_key='+api_key;
+					v2c_api.appendChild( v2c );})();
+					</script>
+				</div>
+			</div>
+		</div>
+		<a href="#!" class="modal-close" title="Cerrar" data-close="Cerrar"></a>
+	</section>
+</div>
 <script type="text/javascript" src="http://www.perufon.com/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://www.perufon.com/public/js/jquery.sabecarousel.js"></script>
+<script>
+	window.onload = function(){
+
+		$('#nombre').attr('placeholder', 'Nombre');
+		$('#apellido').attr('placeholder', 'Apellido');
+		$('#email').attr('placeholder', 'Email');
+		$('#celular').attr('placeholder', 'Celular');
+		$('.v2c_btn_submit').val('¡Solicitar Ahora!');
+
+	}
+	if (window.matchMedia("(max-width: 600px)").matches) {
+		$('.form_mobile').appendTo('#mobil_form');
+		console.log('resolucion menor a 600PX');
+	} else {
+		console.log('resolucion MAYOR a 600PX');
+	}
+</script>
 </body>
 </html>

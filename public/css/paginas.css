@@ -241,11 +241,12 @@ p.lead{
 	font: 4.5em 'Open Sans Bold';
 }
 .btn-red_landing, .btn-red_landing-lg, .v2c_btn_submit{
-	background: url('../images/btn-red.jpg') darkorange;
+	background: url('../images/btn-red.jpg') darkred;
 	border: 0 !important;
 	font: 24px 'Open Sans Regular';
 	padding: 18px 45px;
 	width: 90%;
+	color: white !important;
 }
 .form_landing{
 	background: #2e2e2e;
