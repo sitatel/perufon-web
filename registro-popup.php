@@ -1,10 +1,10 @@
-<?php 
+<?php
   define('APP_DOMAIN', 'http://www.perufon.com');
 
   $s_registry = '';
   $s_call = '';
   $body = '';
-  
+
   if(isset($_GET['do']) && $_GET['do']=='call' && isset($_GET['token'])){
     $s_registry = 'display:none;';
     $s_call = '';
@@ -24,11 +24,11 @@
   <title>Registro</title>
 </head>
 <body style="background:transparent !important">
-  <link rel="stylesheet" href="<?php echo APP_DOMAIN ?>/wp-content/themes/optimizePressTheme/pages/marketing/1/style.min.css"> 
-  <link href="<?php echo APP_DOMAIN ?>/public/css/styles_register.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="<?php echo APP_DOMAIN ?>/wp-content/themes/optimizePressTheme/pages/marketing/1/style.min.css">
+  <link href="<?php echo APP_DOMAIN ?>/public/css/styles_register.css" rel="stylesheet">
 <div class="formSuscribir">
   <div class="titulo_form">
-    <span class="os-bold">¡Rellene el formulario para Probar Sin Costo!</span> 
+    <span class="os-bold">¡Rellene el formulario para Probar Sin Costo!</span>
   </div>
   <div class="info_free u-regular">Recibirá una Prueba GRATUITA</div>
   <div id="form_mobile">
@@ -92,44 +92,44 @@
       </div>
       <div>
       <label for="apellido" style="visibility: hidden;">Mensajes</label>
-      <p class="comment-form-author" id="register-message-result"></p> 
+      <p class="comment-form-author" id="register-message-result"></p>
       </div>
       <div>
       <button type="submit" class="btn btn-default btn-green v2c_btn_submit" aria-label="Left Align">
         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Enviar
       </button>
       </div>
-    </form>                                
+    </form>
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php echo APP_DOMAIN ?>/public/js/scripts_register.min.js"></script>
 <script>
-jQuery('.v2c_btn_submit').click(function(){    
+jQuery('.v2c_btn_submit').click(function(){
 
     function campo(vacio){
       var seleccionar = jQuery('#' + vacio);
         seleccionar.focus();
-      jQuery('#' + vacio).css({'background':'#EED3D7', 'color':'#b94a48', 'outline':'2px solid #B94A48'}); 
-      setTimeout(function(){  
-        jQuery('#' + vacio).css({'background':'', 'color':'', 'outline':''});   
-      },3000);   
+      jQuery('#' + vacio).css({'background':'#EED3D7', 'color':'#b94a48', 'outline':'2px solid #B94A48'});
+      setTimeout(function(){
+        jQuery('#' + vacio).css({'background':'', 'color':'', 'outline':''});
+      },3000);
     }
 
-    if(jQuery('#nombre').val() == ''){ 
-      campo('nombre'); 
-      return;
-    }    
-    if(jQuery('#email').val() == ''){ 
-      campo('email'); 
+    if(jQuery('#nombre').val() == ''){
+      campo('nombre');
       return;
     }
-    if(jQuery('#celular').val() == ''){ 
-      campo('celular'); 
+    if(jQuery('#email').val() == ''){
+      campo('email');
       return;
     }
-    
-    jQuery('#formCV').submit();    
+    if(jQuery('#celular').val() == ''){
+      campo('celular');
+      return;
+    }
+
+    jQuery('#formCV').submit();
 
   })
   window.onload = function(){
@@ -148,7 +148,7 @@ jQuery('#form_mobile input#apellido').attr('placeholder','Apellidos');
 
    var mql = window.matchMedia("screen and (max-width: 959px)")
   if (mql.matches){ // if media query matches
-    jQuery('#form_mobile').appendTo(jQuery('#per-mobile'));    
+    jQuery('#form_mobile').appendTo(jQuery('#per-mobile'));
     jQuery('#form_mobile div>label').css('visibility','hidden');
     jQuery('#form_mobile input#nombre').attr('placeholder','Nombre');
     jQuery('#form_mobile input#email').attr('placeholder','E-Mail');
